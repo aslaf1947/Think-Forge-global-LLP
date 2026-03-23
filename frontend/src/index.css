@@ -1,0 +1,57 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #0f1117;
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #1a1d27; }
+::-webkit-scrollbar-thumb { background: #2d3748; border-radius: 3px; }
+
+.modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.modal-box {
+  background: #1a1d27;
+  border: 1px solid #2d3748;
+  border-radius: 16px;
+  padding: 32px;
+  width: 420px;
+  max-width: 95vw;
+}
+
+.modal-box h2 { font-size: 20px; margin-bottom: 20px; color: #fff; }
+
+.modal-box label { display: block; font-size: 13px; color: #94a3b8; margin-bottom: 6px; margin-top: 14px; }
+
+.modal-box select,
+.modal-box input {
+  width: 100%; padding: 10px 14px;
+  background: #0f1117; border: 1px solid #2d3748;
+  border-radius: 8px; color: #e2e8f0; font-size: 15px;
+}
+
+.modal-actions { display: flex; gap: 12px; margin-top: 24px; }
+
+.btn-primary {
+  flex: 1; padding: 12px;
+  background: #22c55e; color: #000; font-weight: 700;
+  border: none; border-radius: 10px; cursor: pointer; font-size: 15px;
+  transition: background 0.2s;
+}
+.btn-primary:hover { background: #16a34a; }
+
+.btn-secondary {
+  flex: 1; padding: 12px;
+  background: transparent; color: #94a3b8; font-weight: 600;
+  border: 1px solid #2d3748; border-radius: 10px; cursor: pointer; font-size: 15px;
+}
+.btn-secondary:hover { background: #1e2330; }
