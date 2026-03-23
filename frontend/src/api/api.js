@@ -1,7 +1,9 @@
 import axios from 'axios';
 
 // const BASE = 'http://localhost:5000/api';
-const BASE = 'https://YOUR-BACKEND-URL.vercel.app/api';
+// const BASE = 'https://YOUR-BACKEND-URL.vercel.app/api';
+const BASE = 'http://localhost:5000/api';
+
 
 export const getWallets = () => axios.get(`${BASE}/wallets`);
 export const deposit = (id, amount) => axios.post(`${BASE}/wallets/${id}/deposit`, { amount });
