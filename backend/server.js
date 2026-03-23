@@ -6,6 +6,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Root route
+app.get('/', (req, res) => {
+  res.json({ message: 'Wallet Dashboard API is running ✅' });
+});
+
 // ─── IN-MEMORY STORE ───────────────────────────────────────────────
 let wallets = [
   { id: 'w1', name: 'Wallet A', balance: 10000, currency: 'USD' },
