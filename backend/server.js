@@ -103,7 +103,7 @@ app.use(express.json());
 
 // Root route
 app.get('/', (req, res) => {
-  res.json({ message: 'Wallet Dashboard API is running ✅' });
+  res.json({ message: 'Wallet Dashboard API is running '});
 });
 
 // ─── IN-MEMORY STORE ───────────────────────────────────────────────
